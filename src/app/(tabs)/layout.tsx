@@ -1,8 +1,7 @@
-// app/(tabs)/layout.tsx (server component)
-import React from "react";
-import dynamic from "next/dynamic";
+'use client';
 
-const TabsLayout = dynamic(() => import('@/components/TabsLayout'), { ssr: false });
+import React from "react";
+import TabsLayout from "@/components/TabsLayout";
 
 export default function TabsGroupLayout({ children }: { children: React.ReactNode }) {
   return <TabsLayout>{children}</TabsLayout>;
