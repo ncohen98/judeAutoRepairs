@@ -3,16 +3,16 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Phone, Info } from "lucide-react"; // web version of icons
+import { Home, Phone, Info } from "lucide-react";
 import Colors from "@/constants/colors";
 
 const tabs = [
   { href: "/", label: "Home", icon: Home, title: "Jude Auto Repair" },
-  { href: "/contact", label: "Contact", icon: Phone, title: "Contact Us" },
+  { href: "/contact", label: "Contact Us", icon: Phone, title: "Contact Us" },
   { href: "/about", label: "About", icon: Info, title: "About Us" },
 ];
 
-export default function TabsLayout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
   return (
