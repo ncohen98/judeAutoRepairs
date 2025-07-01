@@ -1,0 +1,158 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: var(--background, #fff);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--border, #ccc);
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text, #000);
+}
+
+.closeButton {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text, #000);
+}
+
+.form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Scoped input and textarea inside .inputGroup */
+.inputGroup input,
+.inputGroup textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border, #ccc);
+  font-size: 1rem;
+  color: var(--text, #000);
+  resize: vertical;
+}
+
+.inputGroup textarea {
+  min-height: 80px;
+}
+
+.serviceSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.helperText {
+  font-size: 0.75rem;
+  color: var(--lightText, #666);
+}
+
+.serviceList {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid var(--border, #ccc);
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.serviceOption {
+  padding: 14px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border, #ccc);
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--text, #000);
+  transition: background-color 0.2s ease;
+}
+
+.serviceOption:last-child {
+  border-bottom: none;
+}
+
+.serviceOption:hover {
+  background-color: var(--primaryLight, #e0f2ff);
+}
+
+.selectedService {
+  background-color: var(--primary, #0070f3);
+  color: white;
+  font-weight: 600;
+}
+
+.otherServiceInput {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer {
+  padding: 20px;
+  border-top: 1px solid var(--border, #ccc);
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton {
+  background-color: var(--secondary, #f97316);
+  color: white;
+  font-weight: 700;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

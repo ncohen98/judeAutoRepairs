@@ -1,0 +1,126 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 500px;
+  }
+}
+
+.imageContainer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.contentContainer {
+  position: relative;
+  z-index: 2;
+  padding: 40px 20px;
+  max-width: 600px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .contentContainer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+@media (min-width: 380px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.ctaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.mobileCta {
+  flex-direction: column;
+}
+
+.primaryButton {
+  background-color: var(--color-secondary, #ff6347); /* fallback */
+  padding: 14px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  min-width: 150px;
+  cursor: pointer;
+  border: none;
+}
+
+.secondaryButton {
+  border: 2px solid white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  min-width: 120px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.whatsappButton {
+  background-color: #25D366;
+  padding: 14px 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  min-width: 140px;
+  text-decoration: none;
+}
+
+.whatsappButtonText {
+  display: inline-block;
+}

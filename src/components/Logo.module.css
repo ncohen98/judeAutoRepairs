@@ -1,0 +1,63 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  transform-origin: left center;
+}
+
+.gearContainer {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -4px;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.judeText {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-secondary, blue);
+  letter-spacing: 1px;
+  margin-bottom: -2px;
+}
+
+.wrenchContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  margin-top: -2px;
+}
+
+.wrenchBackground {
+  background-color: var(--color-primary, blue);
+  display: flex;
+  align-items: center;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.autoRepairText {
+  color: white;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-left: 4px;
+}
+
+.specialistsText {
+  font-size: 8px;
+  font-weight: 700;
+  color: #0A1A2F;
+  letter-spacing: 0.5px;
+  margin-left: 4px;
+}

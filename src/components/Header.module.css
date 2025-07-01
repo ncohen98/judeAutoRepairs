@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contactButton {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 8px 12px;
+  border-radius: 8px;
+  gap: 6px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.whatsappButton {
+  display: flex;
+  align-items: center;
+  background-color: #25D366; /* WhatsApp green */
+  padding: 8px 12px;
+  border-radius: 8px;
+  gap: 6px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bookButton {
+  background-color: var(--secondary-color);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.bookButtonText,
+.contactButtonText,
+.whatsappButtonText {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.smallButtonText {
+  font-size: 12px;
+}

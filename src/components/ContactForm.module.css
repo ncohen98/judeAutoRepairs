@@ -1,0 +1,310 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9fafb; /* Light background */
+  color: #111827; /* Text color */
+}
+
+.formSection {
+  flex: 2;
+}
+
+.infoSection {
+  flex: 1;
+  margin-top: 0;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6b7280; /* Gray text */
+  margin-bottom: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #111827;
+  outline-offset: 2px;
+  outline-color: transparent;
+  transition: outline-color 0.2s;
+}
+
+.input:focus {
+  outline-color: #3b82f6;
+}
+
+.textArea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.carIssueSection {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.sectionLabel {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.toggleGroup {
+  margin-bottom: 16px;
+}
+
+.toggleLabel {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.toggleOptions {
+  display: flex;
+  gap: 10px;
+}
+
+.toggleOption {
+  flex: 1;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  border: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  user-select: none;
+}
+
+.toggleOption:hover {
+  background-color: #e0e7ff;
+}
+
+.toggleOptionSelected {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #2563eb;
+}
+
+.checkboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkboxGroupLabel {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.checkbox {
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mediaSection {
+  margin-top: 10px;
+}
+
+.mediaHelp {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.mediaPreviewContainer {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.mediaPreview {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgb(0 0 0 / 0.1);
+}
+
+.mediaPreviewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.removeMediaButton {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.uploadButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 20px;
+  border: 2px dashed #3b82f6;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #3b82f6;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  user-select: none;
+}
+
+.uploadButton:hover {
+  background-color: #e0e7ff;
+}
+
+.uploadButtonText {
+  font-size: 14px;
+}
+
+.submitButton {
+  padding: 14px 20px;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+  background-color: #2563eb;
+}
+
+.submittingButton {
+  cursor: not-allowed;
+  background-color: #a5b4fc;
+}
+
+.infoCard {
+  background-color: white;
+  padding: 24px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
+}
+
+.infoTitle {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.infoItems {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.infoItem {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.infoLabel {
+  font-weight: 600;
+  font-size: 14px;
+  color: #374151;
+}
+
+.infoText {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.businessHours {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 16px;
+}
+
+.businessHoursTitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.hoursRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.dayText {
+  font-weight: 500;
+  color: #374151;
+}
+
+.timeText {
+  font-weight: 400;
+  color: #6b7280;
+}
+
+.whatsappButton {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  background-color: #25d366;
+  padding: 14px 0;
+  color: white;
+  font-weight: 700;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.whatsappButton:hover {
+  background-color: #1ebe5a;
+}
+
+.whatsappButtonText {
+  font-size: 16px;
+}

@@ -1,0 +1,50 @@
+.container {
+  padding: 20px;
+  background-color: var(--lightBackground, #f9fafb);
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text, #111);
+  margin-bottom: 12px;
+}
+
+.sectionSubtitle {
+  font-size: 16px;
+  color: var(--lightText, #6b7280);
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Desktop grid */
+.servicesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.cardContainer {
+  width: 33.3333%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Mobile horizontal scroll */
+.scrollContainer {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+.mobileCardContainer {
+  display: inline-block;
+  margin-right: 16px;
+  vertical-align: top;
+}
