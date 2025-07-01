@@ -1,4 +1,5 @@
-'use client';
+// src/components/TabsLayout.tsx
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -18,7 +19,6 @@ export default function TabsLayout({ children }: { children: React.ReactNode }) 
   return (
     <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <main style={{ flex: 1 }}>{children}</main>
-
       <nav
         style={{
           display: "flex",
