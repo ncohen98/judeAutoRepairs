@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { MessageCircle } from 'lucide-react';
 import BookingModal from './BookingModal';
 import styles from './Hero.module.css';
-import Colors from '@/constants/colors';
+//import Colors from '@/constants/colors';
 
 export default function Hero() {
   const [bookingModalVisible, setBookingModalVisible] = useState(false);

@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { Settings, Wrench } from 'lucide-react';
 import styles from './Logo.module.css';
-import Colors from '@/constants/colors';
+//import Colors from '@/constants/colors';
 
 type LogoSize = 'small' | 'normal' | 'large';
 
