@@ -39,11 +39,11 @@ export default function Experience() {
             className={`${styles.title} ${isSmallDevice ? styles.smallTitle : ''}`}
             style={{ color: Colors.text }}
           >
-            North West London's Trusted Auto Electrical Specialists
+            North West London&apos;s Trusted Auto Electrical Specialists
           </h2>
 
           <p className={styles.description} style={{ color: Colors.lightText }}>
-            At Jude Auto Repair, we've been serving the North West London community for over 15 years, 
+            At Jude Auto Repair, we&apos;ve been serving the North West London community for over 15 years, 
             providing expert electrical and mechanical repairs for all vehicle makes and models.
           </p>
 

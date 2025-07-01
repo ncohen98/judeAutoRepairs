@@ -27,7 +27,7 @@ export default function Footer() {
           <div className={styles.companyInfo}>
             <Logo size={isSmallDevice ? 'normal' : 'large'} />
             <p className={styles.tagline}>
-              North West London's trusted auto electrical specialists
+              North West London&apos;s trusted auto electrical specialists
             </p>
           </div>
 

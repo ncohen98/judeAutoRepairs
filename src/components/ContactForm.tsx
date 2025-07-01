@@ -2,6 +2,7 @@
 
 import { useState, ChangeEvent } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Phone,
   Mail,
@@ -71,7 +72,7 @@ export default function ContactForm() {
       <div className={styles.formSection}>
         <h2 className={styles.title}>Get in Touch</h2>
         <p className={styles.subtitle}>
-          Fill out the form below and we'll get back to you as soon as possible.
+          Fill out the form below and we&apos;ll  get back to you as soon as possible.
         </p>
 
         <form
@@ -161,7 +162,7 @@ export default function ContactForm() {
                     checked={engineWontStartAfterOff}
                     onChange={() => setEngineWontStartAfterOff(!engineWontStartAfterOff)}
                   />
-                  Engine won't start after being turned off
+                  Engine won&apos;t start after being turned off
                 </label>
 
                 <label className={styles.checkbox}>
@@ -202,10 +203,13 @@ export default function ContactForm() {
                 const url = URL.createObjectURL(file);
                 return (
                   <div key={index} className={styles.mediaPreview}>
-                    <img
+                    <Image
                       src={url}
                       alt={`upload-preview-${index}`}
                       className={styles.mediaPreviewImage}
+                      width={100}        // <-- set appropriate width
+                      height={100}       // <-- set appropriate height
+                      objectFit="cover"  // optional, for cropping/fitting
                     />
                     <button
                       type="button"
