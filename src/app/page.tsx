@@ -1,5 +1,5 @@
 // src/app/page.tsx (or src/pages.tsx if you're using pages directory)
-"use client";
+'use client';
 
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';

@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { Cpu, CircuitBoard, BatteryCharging, Power, RefreshCw, Zap } from 'lucide-react';
 import { useEffect, useState } from 'react';
